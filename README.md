@@ -32,17 +32,31 @@ This is a test automation project that performs CRUD operations on the [DummyJSO
 ## ⚠️ Note on PUT Requests
 Due to the mock nature of the DummyJSON API, PUT requests do not persist updates. Tests related to PUT are for structural demonstration and may fail if compared against a GET response post-update.
 
-## 📁 Project Structure
+Project Structure:
+
 Base/
-  -BaseTest.java
-  -ReUseableMethods.java
-Tests/  
-  -Positive_GET/POST/PUT/PATCH/DELETE_Request_TESTS.java
+- BaseTest.java
+- ReUseableMethods.java
+
+Tests/
+- Positive_GET_Request_TESTS.java
+- Positive_POST_Request_TESTS.java
+- Positive_PUT_Request_TESTS.java
+- Positive_PATCH_Request_TESTS.java
+- Positive_DELETE_Request_TESTS.java
+
 Test_Data/
-  -DummyExpectedTestData.java
+- DummyExpectedTestData.java
+
 Pojos/
-  -PostsPojos/
-  -User_Address_Pojo/
+- PostsPojos/
+    +Posts.java
+    +Post.java
+    +Reactions.java
+- User_Address_Pojo/
+    +Address.java
+    +User.java
+
 
 ## 🚀 How to Run
 1. Clone the repo
